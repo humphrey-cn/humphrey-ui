@@ -1,0 +1,45 @@
+// 全局样式变量
+
+// @hh-text-color: #1f2f3d; // 文字颜色
+// @hh-text-title-size: 24px; // 标题字体大小
+// @hh-text-size: 22px; // 正文字体大小
+// @hh-button-color: #fff; // 按钮字体颜色
+// @hh-button-background-color: cyan; // 按钮背景颜色
+// @hh-button-border-color: blue; // 按钮边框颜色
+// @hh-button-border-radius: 3px; // 按钮圆角
+
+// @hh-title-text-color: #1f2f3d; // 标题文本颜色
+// @hh-title-text-size: 22px; // 标题字体大小
+// @hh-content-text-color: #1f2f3d; // 内容文本颜色
+// @hh-content-text-size: 22px; // 内容字体大小
+
+// // 主题颜色配置
+// @hh-background-color-dark: #1a1a1a; // 黑暗主题颜色
+
+@hh-background-color: #fff; // 背景颜色
+@hh-color-title: #1f2f3d; // 标题文本颜色
+@hh-font-size-title: 22px; // 标题字体大小
+@hh-color: rgba(60, 60, 60, 0.7); // 默认文本颜色
+@hh-font-size: 14px; // 默认字体大小
+
+@hh-color-hover: #42d392;
+
+// 边框
+@hh-border-bottom-color: #e3e3e3;
+
+@hh-flex: {
+  display: flex;
+};
+
+// 上下居中
+@hh-flex-c: {
+  @hh-flex();
+  align-items: center;
+};
+
+// 上下左右居中
+@hh-flex-c-c: {
+  @hh-flex();
+  @hh-flex-c();
+  justify-content: center;
+};

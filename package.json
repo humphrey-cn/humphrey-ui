@@ -1,15 +1,23 @@
 {
   "name": "humphrey-ui",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "A Vue.js 2.0 UI Toolkit for Web.",
+  "author": "humphrey",
+  "main": "lib/humphrey-ui.umd.min.js",
+  "keyword": "ui, vue2, vue, humphrey, humphrey-ui, humphreyUi",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name humphrey-ui --dest lib ./package/index.js",
+    "libs": "vue-cli-service build --target lib --name humphrey-ui --dest lib"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "github-markdown-css": "^5.1.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -19,6 +27,9 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "vue-markdown-loader": "^2.5.0",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
@@ -33,7 +44,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off"
+    }
   },
   "browserslist": [
     "> 1%",

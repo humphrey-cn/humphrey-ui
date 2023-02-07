@@ -2,12 +2,10 @@
  * @Author: Humphrey humphrey_cn@163.com
  * @Date: 2023-02-07 13:34:35
  * @LastEditors: Humphrey humphrey_cn@163.com
- * @LastEditTime: 2023-02-07 13:34:53
+ * @LastEditTime: 2023-02-07 13:37:02
  * @FilePath: /humphrey-ui/README.md
  * @Description: 文档说明
 -->
-# 核酸检测
-
 ## Project setup
 ```
 npm install
